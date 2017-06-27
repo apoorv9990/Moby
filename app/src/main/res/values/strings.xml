@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Moby Apply</string>
+
+    <string name="base_url">http://virtserver.swaggerhub.com/mobyjames/CareersAPI/1.0.0/</string>
 </resources>
