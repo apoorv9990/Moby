@@ -65,4 +65,9 @@ public class LoginActivity extends BaseActivity implements LoginPresenter.LoginV
 
         mPresenter.login();
     }
+
+    @OnClick(R.id.button_register)
+    public void onRegistrationClicked() {
+        RegistrationActivity.startActivity(this);
+    }
 }

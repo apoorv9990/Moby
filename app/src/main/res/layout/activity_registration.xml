@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/spacing_m"
+            android:textColor="@android:color/white"
+            android:text="Register"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/spacing_m">
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_border_view"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:padding="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_border_view"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:padding="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_border_view"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:padding="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_border_view"
+                    android:hint="Phone"
+                    android:inputType="text|phone"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edit_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:padding="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_border_view"
+                    android:hint="Summary"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:lines="3"
+                    android:gravity="left|top"/>
+
+                <LinearLayout
+                    android:id="@+id/links_parent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:layout_marginBottom="@dimen/spacing_m">
+
+                    <EditText
+                        android:id="@+id/edit_add_link"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/spacing_m"
+                        android:background="@drawable/rounded_primary_border_view"
+                        android:hint="Add Link"/>
+
+                    <Button
+                        android:id="@+id/button_add_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="+"
+                        android:background="@drawable/rounded_primary_button"
+                        android:textColor="@android:color/white"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:layout_marginLeft="@dimen/spacing_m"
+                        android:paddingTop="@dimen/spacing_m"
+                        android:paddingBottom="@dimen/spacing_m"
+                        android:paddingRight="@dimen/spacing_l"
+                        android:paddingLeft="@dimen/spacing_l"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:layout_marginBottom="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_button"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

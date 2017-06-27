@@ -1,62 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edit_email"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_m"
-            android:layout_marginRight="@dimen/spacing_m"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
             android:padding="@dimen/spacing_m"
-            android:background="@drawable/rounded_primary_border_view"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:imeOptions="actionNext"/>
-
-        <EditText
-            android:id="@+id/edit_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_m"
-            android:layout_marginRight="@dimen/spacing_m"
-            android:layout_marginTop="@dimen/spacing_m"
-            android:padding="@dimen/spacing_m"
-            android:background="@drawable/rounded_primary_border_view"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:imeOptions="actionDone"/>
-
-        <Button
-            android:id="@+id/button_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_m"
-            android:layout_marginRight="@dimen/spacing_m"
-            android:layout_marginTop="@dimen/spacing_l"
-            android:background="@drawable/rounded_primary_button"
+            android:textColor="@android:color/white"
             android:text="Login"
-            android:textColor="@android:color/white"/>
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
-        <Button
-            android:id="@+id/button_register"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_m"
-            android:layout_marginRight="@dimen/spacing_m"
-            android:layout_marginTop="@dimen/spacing_m"
-            android:background="@drawable/rounded_primary_button"
-            android:text="Register"
-            android:textColor="@android:color/white"/>
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_m"
+                    android:layout_marginRight="@dimen/spacing_m"
+                    android:padding="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_border_view"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_m"
+                    android:layout_marginRight="@dimen/spacing_m"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:padding="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_border_view"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"/>
+
+                <Button
+                    android:id="@+id/button_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_m"
+                    android:layout_marginRight="@dimen/spacing_m"
+                    android:layout_marginTop="@dimen/spacing_l"
+                    android:background="@drawable/rounded_primary_button"
+                    android:text="Login"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/button_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_m"
+                    android:layout_marginRight="@dimen/spacing_m"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:background="@drawable/rounded_primary_button"
+                    android:text="Register"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>
