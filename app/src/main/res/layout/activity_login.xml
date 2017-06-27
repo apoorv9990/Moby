@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.moby.apply.activities.LoginActivity">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:padding="@dimen/spacing_m"
+            android:background="@drawable/rounded_black_border_view"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:padding="@dimen/spacing_m"
+            android:background="@drawable/rounded_black_border_view"
+            android:hint="Password"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:background="@drawable/rounded_primary_button"
+            android:text="Login"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:background="@drawable/rounded_primary_button"
+            android:text="Register"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>
